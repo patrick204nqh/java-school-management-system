@@ -52,4 +52,14 @@ public class Teacher {
         salaryEarned+=salary;
         School.updateTotalMoneySpent(salary);
     }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                ", salaryEarned=" + salaryEarned +
+                '}';
+    }
 }
