@@ -36,11 +36,13 @@ public class Student {
         this.grade = grade;
     }
 
+    // Keep adding the fees to feesPaid Field
     // Add the fees to the fees paid.
     // The school is going receive the funds.
     // @param fees the fees that the student pays.
-    public void updateFeesPaid(int fees) {
+    public void payFees(int fees) {
         feesPaid += fees;
+        School.updateTotalMoneyEarned(feesPaid);
     }
 
     // @return id of the student.
@@ -68,4 +70,11 @@ public class Student {
         return feesTotal;
     }
 
+    /*
+    * @return the remaining fees.
+    * */
+    public int getRemainingFees() {
+        return feesTotal - feesPaid;
+    }
 }
+

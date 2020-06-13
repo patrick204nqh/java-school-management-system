@@ -24,8 +24,10 @@ public class Main {
         studentList.add(kevin);
 
         School ghs = new School(teacherList, studentList);
+
+        patrick.payFees(5000);
         System.out.println("GHS has earned " + ghs.getTotalMoneyEarned());
-
-
+        robert.payFees(6000);
+        System.out.println("GHS has earned " + ghs.getTotalMoneyEarned());
     }
 }
