@@ -29,5 +29,12 @@ public class Main {
         System.out.println("GHS has earned " + ghs.getTotalMoneyEarned());
         robert.payFees(6000);
         System.out.println("GHS has earned " + ghs.getTotalMoneyEarned());
+
+        System.out.println("-----------Making SCHOOL PAY SALARY-------------");
+        lizzy.receiveSalary(lizzy.getSalary());
+        System.out.println("GHS has spent for salary to " + lizzy.getName() + " and now has " + ghs.getTotalMoneyEarned());
+
+
+
     }
 }
